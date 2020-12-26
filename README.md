@@ -3,6 +3,19 @@
 This is the source code for the all the text-based spam that can be classified
 for different purposes.
 
+## Fetch model
+
+CoffeeHousePy comes with tools to fetch the latest models available, add the
+following code to your project to fetch the model
+
+```python
+from resource_fetch import ResourceFetch
+rf = ResourceFetch()
+
+spam_classification = rf.fetch("Intellivoid", "CoffeeHouseData-Spam")
+```
+
+
 ## Building The Model
 
 Builiding the model requires CoffeeHousePy to be installed on the system, 
