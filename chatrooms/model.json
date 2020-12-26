@@ -7,9 +7,9 @@
         "description": "This model is best for predicting spam in chat rooms like Telegram's public chats"
     },
     "training_properties":{
-        "epoch": 40,
+        "epoch": 13,
         "vec_dim": 150,
-        "test_ratio": 0.8,
+        "test_ratio": 0.3,
         "architecture": "cnn",
         "batch_size": 256
     },
