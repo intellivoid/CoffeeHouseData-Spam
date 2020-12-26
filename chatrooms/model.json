@@ -1,0 +1,20 @@
+{
+    "model": {
+        "name": "Chatroom Spam",
+        "model_name": "chatrooms",
+        "author": "Zi Xing",
+        "version": "1.0.0.0",
+        "description": "This model is best for predicting spam in chat rooms like Telegram's public chats"
+    },
+    "training_properties":{
+        "epoch": 40,
+        "vec_dim": 150,
+        "test_ratio": 0.8,
+        "architecture": "cnn",
+        "batch_size": 256
+    },
+    "classification": [
+        {"l": "spam", "f": "spam.dat"},
+        {"l": "ham", "f": "ham.dat"}
+    ]
+}
