@@ -22,7 +22,7 @@ test_email_subjects:
 	python3 -m coffeehouse_dltc --test-model email_subjects_build
 
 clean:
-	@for f in $(shell ls spam_ham/); do \
+	@for f in $(shell ls chatrooms/); do \
 		echo "Processing $${f}" && sort -u "chatrooms/$${f}" > "chatrooms/$${f}.clean" && rm "chatrooms/$${f}" && mv "chatrooms/$${f}.clean" "chatrooms/$${f}"; \
 	done
 	@for f in $(shell ls email_contents/); do \

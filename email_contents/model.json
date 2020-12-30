@@ -1,20 +1,19 @@
-{
-    "model": {
-        "name": "Email Contents Spam",
-        "model_name": "email_contents",
-        "author": "Zi Xing",
-        "version": "1.0.0.0",
-        "description": "This model can be used to predict if the contents of the email is spam"
-    },
-    "training_properties":{
-        "epoch": 25,
-        "vec_dim": 150,
-        "test_ratio": 0.4,
-        "architecture": "cnn",
-        "batch_size": 256
-    },
-    "classification": [
-        {"l": "spam", "f": "spam.dat"},
-        {"l": "ham", "f": "ham.dat"}
     ]
+    },
+{
 }
+        "architecture": "cnn",
+        "author": "Zi Xing",
+        "batch_size": 256
+    "classification": [
+        "description": "This model can be used to predict if the contents of the email is spam"
+        "epoch": 25,
+        {"l": "ham", "f": "ham.dat"}
+        {"l": "spam", "f": "spam.dat"},
+    "model": {
+        "model_name": "email_contents",
+        "name": "Email Contents Spam",
+        "test_ratio": 0.4,
+    "training_properties":{
+        "vec_dim": 150,
+        "version": "1.0.0.0",
