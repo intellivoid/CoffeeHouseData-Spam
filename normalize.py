@@ -26,6 +26,8 @@ def process_change():
 
 while True:
     current_stat = os.stat("input.txt")[8]
+    if current_time == 0:
+        current_time = current_stat
     if current_stat > current_time:
         current_time = current_stat
         print("Change Detected {0}".format(current_stat))
