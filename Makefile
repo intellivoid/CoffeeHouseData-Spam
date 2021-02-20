@@ -23,11 +23,11 @@ test_email_subjects:
 
 clean:
 	@for f in $(shell ls chatrooms/); do \
-		echo "Processing $${f}" && sort -u "chatrooms/$${f}" > "chatrooms/$${f}.clean" && rm "chatrooms/$${f}" && mv "chatrooms/$${f}.clean" "chatrooms/$${f}"; \
+		echo "Processing $${f}" && LC_ALL=C sort -u "chatrooms/$${f}" > "chatrooms/$${f}.clean" && rm "chatrooms/$${f}" && mv "chatrooms/$${f}.clean" "chatrooms/$${f}"; \
 	done
 	@for f in $(shell ls email_contents/); do \
-		echo "Processing $${f}" && sort -u "email_contents/$${f}" > "email_contents/$${f}.clean" && rm "email_contents/$${f}" && mv "email_contents/$${f}.clean" "email_contents/$${f}"; \
+		echo "Processing $${f}" && LC_ALL=C sort -u "email_contents/$${f}" > "email_contents/$${f}.clean" && rm "email_contents/$${f}" && mv "email_contents/$${f}.clean" "email_contents/$${f}"; \
 	done
 	@for f in $(shell ls email_subjects/); do \
-		echo "Processing $${f}" && sort -u "email_subjects/$${f}" > "email_subjects/$${f}.clean" && rm "email_subjects/$${f}" && mv "email_subjects/$${f}.clean" "email_subjects/$${f}"; \
+		echo "Processing $${f}" && LC_ALL=C sort -u "email_subjects/$${f}" > "email_subjects/$${f}.clean" && rm "email_subjects/$${f}" && mv "email_subjects/$${f}.clean" "email_subjects/$${f}"; \
 	done
