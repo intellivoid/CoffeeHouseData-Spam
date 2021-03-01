@@ -3,7 +3,7 @@
         "name": "Chatroom Spam",
         "model_name": "chatrooms",
         "author": "Zi Xing",
-        "version": "1.0.0.2",
+        "version": "1.0.0.3",
         "description": "This model is best for predicting spam in chat rooms like Telegram's public chats"
     },
     "training_properties":{
